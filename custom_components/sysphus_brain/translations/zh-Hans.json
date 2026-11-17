@@ -1,0 +1,35 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Sysphus 大脑已经配置过了"
+    },
+    "step": {
+      "user": {
+        "title": "Sysphus 大脑",
+        "description": "精准命令由 Home Assistant 内置对话代理即时执行；其余内容通过大脑 webhook 发给 Sysphus 处理。",
+        "data": {
+          "webhook_url": "大脑 webhook 地址",
+          "timeout": "大脑回复超时"
+        },
+        "data_description": {
+          "webhook_url": "局域网内 Sysphus 大脑接收器的 POST 地址。",
+          "timeout": "等待 Sysphus 回复的最长秒数，超时后播报兜底句。"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "webhook_url": "大脑 webhook 地址",
+          "timeout": "大脑回复超时"
+        },
+        "data_description": {
+          "webhook_url": "局域网内 Sysphus 大脑接收器的 POST 地址。",
+          "timeout": "等待 Sysphus 回复的最长秒数，超时后播报兜底句。"
+        }
+      }
+    }
+  }
+}
